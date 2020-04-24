@@ -1,4 +1,4 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef, useEffect } from "react";
 import { Box, Flex, Button, Image, useColorMode } from "@chakra-ui/core";
 import {
   StyledHeader,
@@ -9,6 +9,8 @@ import {
 } from "./Header.styles";
 
 import { NavLink } from "react-router-dom";
+import Logo from "../../../Logo.svg";
+import LogoDark from "../../../LogoDark.svg";
 // const MenuItem = ({ children, url, value }) => (
 //   <MenuNav style={{ color: url === value ? "blue" : "black" }} to={url}>
 //     {children}
@@ -22,6 +24,14 @@ const Header = (props) => {
   const { colorMode, toggleColorMode } = useColorMode();
   const { currPath } = props;
 
+  const images = [
+    {
+      filename: "assets/Logo.svg",
+    },
+    {
+      filename: "assets/LogoDark.svg",
+    },
+  ];
   const tabsRoutes = [
     {
       label: "Color Tools",
@@ -47,7 +57,6 @@ const Header = (props) => {
   };
 
   useLayoutEffect(() => {
-    console.log(parseInt(tabsRoutes[tabActive].ref.current.clientWidth));
     underline.current.style.width =
       tabsRoutes[tabActive].ref.current.clientWidth + "px";
     let toMove = 0;
@@ -57,6 +66,13 @@ const Header = (props) => {
     underline.current.style.left = toMove + "px";
   }, [tabsRoutes, tabActive]);
 
+  // useEffect(() => {
+  //   images.forEach((image) => {
+  //     const img = new Image();
+  //     img.src = image.filename;
+  //   });
+  // }, []);
+
   return (
     <StyledHeader
       {...props}
@@ -64,10 +80,7 @@ const Header = (props) => {
       pr={["1rem", "1rem", "6rem", "8rem"]}
     >
       <HeaderLogo>
-        <Image
-          alt="logo"
-          src={colorMode === "dark" ? "assets/LogoDark.svg" : "assets/Logo.svg"}
-        />
+        <Image src={colorMode === "dark" ? LogoDark : Logo} />
       </HeaderLogo>
       <Tabs
         display={{ sm: show ? "block" : "none", md: "flex" }}
