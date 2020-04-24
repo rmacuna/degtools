@@ -3,12 +3,15 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { ColorModeProvider } from "@chakra-ui/core";
+import { BrowserRouter as Router } from "react-router-dom";
 ReactDOM.render(
-  <ColorModeProvider>
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  </ColorModeProvider>,
+  <Router>
+    <ColorModeProvider>
+      <React.StrictMode>
+        <App />
+      </React.StrictMode>
+    </ColorModeProvider>
+  </Router>,
   document.getElementById("root")
 );
 

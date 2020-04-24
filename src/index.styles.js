@@ -1,6 +1,9 @@
 import { css } from "@emotion/core";
 
 export default css`
+  :root {
+    font-size: 16px;
+  }
   body {
     margin: 0;
     font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI",

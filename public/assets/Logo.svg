@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="111.968" height="33.936" viewBox="0 0 111.968 33.936">
+  <g id="Grupo_39" data-name="Grupo 39" transform="translate(-133.032 -17.032)">
+    <text id="Degtools" transform="translate(173 40)" fill="#15181d" font-size="16" font-family="Poppins-Medium, Poppins" font-weight="500"><tspan x="0" y="0">Degtools</tspan></text>
+    <g id="Grupo_38" data-name="Grupo 38" transform="matrix(0.695, 0.719, -0.719, 0.695, 69.564, -98.238)">
+      <g id="Elipse_1" data-name="Elipse 1" transform="translate(139 22)" fill="#fff" stroke="#7499ff" stroke-width="1">
+        <circle cx="12" cy="12" r="12" stroke="none"/>
+        <circle cx="12" cy="12" r="11.5" fill="none"/>
+      </g>
+      <g id="Elipse_5" data-name="Elipse 5" transform="translate(145 28)" fill="#7499ff" stroke="#7499ff" stroke-width="1">
+        <circle cx="6" cy="6" r="6" stroke="none"/>
+        <circle cx="6" cy="6" r="5.5" fill="none"/>
+      </g>
+      <rect id="Rectángulo_80" data-name="Rectángulo 80" width="13" height="5" transform="translate(140.264 41.022) rotate(-45)" fill="#fff"/>
+    </g>
+    <g id="Rectángulo_81" data-name="Rectángulo 81" transform="translate(156 34)" fill="#fff" stroke="#7499ff" stroke-width="1">
+      <rect width="5" height="1" stroke="none"/>
+      <rect x="0.5" y="0.5" width="4" fill="none"/>
+    </g>
+  </g>
+</svg>
