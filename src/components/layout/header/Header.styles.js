@@ -15,7 +15,8 @@ export const MenuNav = styled(Text)`
   text-decoration: none;
   font-size: ${(props) => props.theme.fontSizes["sm"]};
   font-weight: 500;
-  margin-right: 0.953rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   color: ${(props) =>
     props.active ? props.theme.colors.brand[500] : props.theme.colors.baseText};
 `;

@@ -16,6 +16,10 @@ const base = {
   },
   colors: {
     ...theme.colors,
+    gray: {
+      ...theme.colors.gray,
+      // 900: "#171C1F",
+    },
     brand: {
       0: "#F0F5FF",
       100: "#F0F5FF",
