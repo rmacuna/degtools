@@ -1,5 +1,4 @@
 import React from "react";
-import PropTypes from "prop-types";
 import { Box } from "@chakra-ui/core";
 
 const Colorbox = (props) => {
@@ -14,7 +13,5 @@ const Colorbox = (props) => {
     ></Box>
   );
 };
-
-Colorbox.propTypes = {};
 
 export default Colorbox;
