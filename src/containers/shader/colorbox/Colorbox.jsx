@@ -7,10 +7,10 @@ const Colorbox = (props) => {
       border="1px solid"
       borderColor="gray.200"
       width={120}
-      height={80}
+      height={90}
       borderRadius={5}
       {...props}
-    ></Box>
+    />
   );
 };
 

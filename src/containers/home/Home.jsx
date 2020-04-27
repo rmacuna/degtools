@@ -6,7 +6,7 @@ import Conversor from "../conversor/Conversor";
 import TypeScale from "../typescale/TypeScale";
 
 const Home = (props) => {
-  let { path, url } = useRouteMatch();
+  const { path, url } = useRouteMatch();
   return (
     <>
       <Header currPath={path} />

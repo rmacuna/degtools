@@ -87,6 +87,7 @@ const Header = (props) => {
         width={{ sm: "full", md: "auto" }}
         isInline
       >
+        {/* Make this a component to re-use it */}
         <Flex align="center" height="100%" position="relative">
           <Underline ref={underline} />
           {tabsRoutes.map((elem, index) => {

@@ -1,1 +1,1 @@
-export const DEFAULT_COLOR_SHADE = "#000";
+export const DEFAULT_COLOR_SHADE = "#649FFF";
