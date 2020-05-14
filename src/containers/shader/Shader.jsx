@@ -14,6 +14,7 @@ const Shader = (props) => {
   const [inputColor, setInputColor] = useState(DEFAULT_COLOR_SHADE);
   const [shades, setColorShades] = useState([]);
   const { path, url } = useRouteMatch();
+
   const handleChange = (event) => {
     setInputColor(event.target.value);
     const colorObject = getColor(event.target.value);
@@ -65,7 +66,6 @@ const Shader = (props) => {
           </Stack>
         </Col>
       </Row>
-
       <Row>
         <Col xs={12} sm={12} md={6} lg={6}>
           <Stack isInline spacing={4}>
